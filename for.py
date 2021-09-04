@@ -40,12 +40,37 @@
 #         print(i + 1)
 #         break
 
+# インデックス
+# n = int(input())
+# a = [0]*n
+
+# for i in range(n):
+#     a[i] = input()
+
+# k = input()
+
+# print(a.index('2')+1)
+
+
+m = int(input())
+
+#[""]文字列の配列を作成するため
+c = [""]*m
+
+for i in range(m):
+    c[i] = input()  
+    
 n = int(input())
-a = [0]*n
 
-for i in range(n):
-    a[i] = input()
+s = [""]*n
 
-k = input()
+for l in range(n):
+    s[l] = input()
 
-print(a.index('2')+1)
+for i in range(m):
+    for l in range(n):
+        if c[i] in s[l]:
+            print("YES")
+        else:
+            print("NO")
+        
