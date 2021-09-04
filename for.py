@@ -12,16 +12,40 @@
 
 #フラグ管理
 
-n = int(input())
+# n = int(input())
 
-flag = False
+# flag = False
+
+# for i in range(n):
+#     a = int(input())
+#     if a == 7:
+#         flag = True
+
+# if flag:
+#     print("YES")
+# else:
+#     print("NO")
+
+# n = int(input())
+
+# a = [0] * n
+
+# for i in range(n):
+#     a[i] = input()
+
+# k = input()
+
+# for i in range(n):
+#     if a[i] == k:
+#         print(i + 1)
+#         break
+
+n = int(input())
+a = [0]*n
 
 for i in range(n):
-    a = int(input())
-    if a == 7:
-        flag = True
+    a[i] = input()
 
-if flag:
-    print("YES")
-else:
-    print("NO")
+k = input()
+
+print(a.index('2')+1)
