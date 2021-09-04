@@ -55,22 +55,33 @@
 m = int(input())
 
 #[""]文字列の配列を作成するため
-c = [""]*m
+# c = [""]*m
 
-for i in range(m):
-    c[i] = input()  
+# for i in range(m):
+#     c[i] = input()  
     
-n = int(input())
+# n = int(input())
 
-s = [""]*n
+# s = [""]*n
 
-for l in range(n):
-    s[l] = input()
+# for l in range(n):
+#     s[l] = input()
 
-for i in range(m):
-    for l in range(n):
-        if c[i] in s[l]:
-            print("YES")
-        else:
-            print("NO")
+# for i in range(m):
+#     for l in range(n):
+#         if c[i] in s[l]:
+#             print("YES")
+#         else:
+#             print("NO")
         
+
+#forループ
+N, M, K = map(int,input().split())
+
+for i in range(N):
+    a = [int(j) for j in input().split()]
+    ans = 0
+    for j in range(M):
+        if a[j]== K:
+            ans += 1
+    print(ans)
