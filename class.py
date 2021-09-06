@@ -10,4 +10,4 @@ no1 = User("bob")
 
 print(no1.name,no1.age)
 
-no1.age()
+# no1.age()
