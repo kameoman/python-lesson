@@ -15,7 +15,7 @@
 # となります。最終的に何台のトラックが必要になるかを求めてください。
 
 from functools import reduce
-print(len(reduce(lambda a,b: a+[[b]] if sum(a[-1])+b>5000 else a[:-1]+[a[-1]+[b]], list(reversed(range(1,801))), [[]])))
+print(len(reduce(lambda a,b: a+[[b]])) if sum(a[-1])+b>5000 else a[:-1]+[a[-1]+[b]], list(reversed(range(1,801))), [[]])))
 
 # 68
 #https://techacademy.jp/magazine/18844
